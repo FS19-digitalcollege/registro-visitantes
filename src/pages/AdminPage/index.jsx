@@ -1,6 +1,7 @@
 import { Document, Page, View, Text, PDFDownloadLink, StyleSheet } from "@react-pdf/renderer";
 import { Html } from "react-pdf-html";
 import "./index.css";
+import GraficoPorGenero from "../../components/GraficoPorGenero";
 
 const PDF = () => {
     const html = `
@@ -52,6 +53,21 @@ const AdminPage = () => {
                         Baixar PDF
                     </PDFDownloadLink>
                 </h3>
+                <div className="graficos">
+                    <div className="grafico">
+                        <h6>Total de Visitantes</h6>
+                    </div>
+                    <div className="grafico">
+                        <h6>Total por Gênero</h6>
+                        <GraficoPorGenero />
+                    </div>
+                    <div className="grafico">
+                        <h6>Total por Bairro</h6>
+                    </div>
+                    <div className="grafico">
+                        <h6>Total por Cidade</h6>
+                    </div>
+                </div>
             </main>
         </>
     );
