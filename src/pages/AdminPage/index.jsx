@@ -47,12 +47,12 @@ const AdminPage = () => {
             <main>
                 <h3>
                     Painel
-                    <PDFDownloadLink 
+                    {/* <PDFDownloadLink 
                         document={<PDF />} 
                         fileName="boasvindas.pdf"
                     >
                         Baixar PDF
-                    </PDFDownloadLink>
+                    </PDFDownloadLink> */}
                 </h3>
                 <div className="graficos">
                     <div className="grafico">
@@ -60,14 +60,14 @@ const AdminPage = () => {
                     </div>
                     <div className="grafico">
                         <h6>Total por Gênero</h6>
-                        <GraficoPorGenero />
+                        {/* <GraficoPorGenero /> */}
                     </div>
                     <div className="grafico">
                         <h6>Total por Bairro</h6>
                     </div>
                     <div className="grafico">
                         <h6>Total por Cidade</h6>
-                        <GraficoPorCidade />
+                        {/* <GraficoPorCidade /> */}
                     </div>
                 </div>
             </main>
